@@ -2,4 +2,4 @@
 - hosts: edu
   become: yes
   roles:
-    - nginx
+    nodejs
