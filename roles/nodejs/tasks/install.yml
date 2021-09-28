@@ -1,0 +1,14 @@
+---
+- name: install nodejs from package - ubuntu
+  apt:
+    name:
+      - nodejs
+    state: latest
+    update_cache: yes
+  when: ansible_distribution == 'Ubuntu'
+
+
+- name: ensure nodejs is enabled to start at boot
+  systemd:
+    name: nodejs
+    enabled: yes
