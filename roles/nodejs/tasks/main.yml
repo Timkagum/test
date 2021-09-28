@@ -1,2 +1,3 @@
 ---
+- include: nod.yml
 - include: install.yml
